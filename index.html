@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Building HTML Forms</title>
+  </head>
+  <body>
+    <form action="/form-handling-url" method="post">
+      <fieldset style="width: 19em">
+        <legend>Add User</legend>
+
+        <div>
+          <label for="firstName">First Name</label>
+          <input type="text" id="firstName" name="first_name" />
+        </div>
+
+        <div>
+          <label for="lastName">Last Name</label>
+          <input type="text" id="lastName" name="last_name" />
+        </div>
+
+        <div>
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email_address" />
+        </div>
+
+        <div>
+          <label for="role">Role</label>
+          <select name="status" id="status">
+            <option value="student">Student</option>
+            <option value="teacher">Teacher</option>
+            <option value="guest">Guest</option>
+          </select>
+        </div>
+
+        <p>Choose your favorite programming language:</p>
+        <input type="radio" id="html" name="fav_language" value="HTML" />
+        <label for="html">HTML</label>
+        <br />
+        <input type="radio" id="css" name="fav_language" value="CSS" />
+        <label for="css">CSS</label>
+        <br />
+        <input
+          type="radio"
+          id="javascript"
+          name="fav_language"
+          value="JavaScript"
+        />
+        <label for="javascript">JavaScript</label>
+        <br />
+        <br />
+        <label for="comments">Comments</label>
+        <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
+        <input type="date" />
+        <br />
+        <br />
+        <input type="checkbox" id="signup" name="signup" checked />
+        <label for="scales">Sign up for newsletter</label>
+        <br />
+        <input type="checkbox" id="agree" name="agree" />
+        <label for="agree">Agree to terms and conditions</label>
+        <br />
+        <br />
+        <div>
+          <button type="submit">Submit</button>
+        </div>
+      </fieldset>
+    </form>
+  </body>
+</html>
